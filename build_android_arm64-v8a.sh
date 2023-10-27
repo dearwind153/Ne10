@@ -1,6 +1,6 @@
 #!/bin/bash
 
-aim_dir=./build-aarch64
+aim_dir=./build-arm64-v8a
 
 if [[ -d $aim_dir ]];then
     rm -rf $aim_dir
