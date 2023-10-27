@@ -12,5 +12,6 @@ cmake ../ -G "Unix Makefiles" -DNE10_ANDROID_TARGET_ARCH=armv7 -DANDROID_NATIVE_
        -DANDROID_ABI="armeabi-v7a" \
        -DANDROID_STL=c++_static  \
        -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-       -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake
+       -DCMAKE_TOOLCHAIN_FILE=../android/android_config.cmake
+       #-DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake
 make
