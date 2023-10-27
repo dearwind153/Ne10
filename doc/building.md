@@ -55,7 +55,7 @@ As Android is itself a \*nix platform, all the information about compilation to 
 ```bash
 cd $NE10_PATH
 mkdir build && cd build
-export ANDROID_NDK=/absolute/path/of/android-ndk
+export ANDROID_NDK=/absolute/path/of/android-ndk                # tip: you should use android-ndk-r15c
 export NE10_ANDROID_TARGET_ARCH=armv7                           # Can also be "aarch64"
 cmake -DCMAKE_TOOLCHAIN_FILE=../android/android_config.cmake ..
 make
